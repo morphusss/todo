@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="main-container flex-vertical">
+        <section class="header flex-horizontal">
+            <h1>ToDo</h1>
+            <section class="open-completed">
+                <button class="open-completed-button">See</button>
+            </section>
+        </section>
+        <section class="sub-container flex-vertical">
+            <section class="todo-container flex-vertical">
+                <section class="todo-header">
+                    <section class="add-todo flex-horizontal">
+                        <input class="input-task" type="text" placeholder="Your task">
+                        <button class="add-todo-btn">+</button>
+                    </section>
+                    <section class="todo-priority flex-horizontal">
+                        <section class="priority-type">
+                            <input type="radio" name="option" id="red-priority">
+                            <label for="red-priority">important</label>
+                        </section>
+                        <section class="priority-type">
+                            <input type="radio" name="option" id="blue-priority">
+                            <label for="blue-priority">semi-important</label>
+                        </section>
+                        <section class="priority-type">
+                            <input type="radio" name="option" id="green-priority">
+                            <label for="green-priority">irrelevant</label>
+                        </section>
+                    </section>
+                </section>
+                <div class="horizontal-separator"></div>
+                <section class="todo-storage"></section>
+            </section>
+        </section>    
+    </section>
+    <script src="./script.js"></script>
+</body>
+</html>
