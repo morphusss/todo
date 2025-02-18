@@ -34,8 +34,8 @@ label::before {
 }
 
 input[type="radio"]:checked  + label::before{
-    background-color: #A8DADC;
-    border: 2px solid #A8DADC;
+    background-color: #E63946;
+    border: 2px solid #1D3557;
 }   
 
 .flex-vertical{
@@ -56,6 +56,7 @@ input[type="radio"]:checked  + label::before{
 }
 
 .horizontal-separator{
+    height: fit-content;
     width: 100%;
     border: 1px solid #F1FAEE;
     margin-top: 3%;
@@ -78,7 +79,9 @@ input[type="radio"]:checked  + label::before{
 
 .open-completed-button{
     background-color: #1D3557;
-    width: 52px;
+    width: fit-content;
+    padding-left: 4px;
+    padding-right: 4px;
     border: 0px;
     border-radius: 5px;
     color: #F1FAEE;
@@ -88,8 +91,9 @@ input[type="radio"]:checked  + label::before{
     height: 95vh;
 }
 
-.todo-container{
+.todo-app-container{
     width: 50%;
+    max-height: 90vh;
     margin: 5%;
     padding: 2%;
     background-color: #1D3557;
@@ -103,23 +107,27 @@ input[type="radio"]:checked  + label::before{
 
 }
 
-.add-todo{
-    height: 5vh;
+.task-body{
+    min-height: 5vh;
+    height: fit-content;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: stretch;
+    margin-bottom: 1.5vh; 
 }
 
-.input-task{
+.task-field{
     height: 100%;
     width: 91%;
     border: 0px;
     border-radius: 12px;
     padding: 10px;
     background-color: #F1FAEE;
+    overflow-wrap: anywhere;
 }
 
-.add-todo-btn{
+.task-btn{
     height: 100%;
     width: 7%;
     border: 0px;
@@ -134,7 +142,6 @@ input[type="radio"]:checked  + label::before{
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    margin-top: 1.5vh; 
 }
 
 .priority-type{
@@ -143,4 +150,11 @@ input[type="radio"]:checked  + label::before{
     background-color: #F1FAEE;
     padding: 1%;
     border-radius: 10px;
+    overflow-wrap: anywhere;
+}
+
+.todo-storage{
+    height: 100vh;
+    width: 100%;
+    overflow-y: auto;
 }

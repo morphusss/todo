@@ -11,15 +11,15 @@
         <section class="header flex-horizontal">
             <h1>ToDo</h1>
             <section class="open-completed">
-                <button class="open-completed-button">See</button>
+                <button id="open-archive"  class="open-completed-button">Archive</button>
             </section>
         </section>
         <section class="sub-container flex-vertical">
-            <section class="todo-container flex-vertical">
-                <section class="todo-header">
-                    <section class="add-todo flex-horizontal">
-                        <input class="input-task" type="text" placeholder="Your task">
-                        <button class="add-todo-btn">+</button>
+            <section id="todo-body" class="todo-app-container flex-vertical">
+                <section id="todo-create-wrapper" class="todo-header">
+                    <section class="task-body flex-horizontal">
+                        <input id="input-todo" class="task-field" type="text" placeholder="Your task">
+                        <button id="create-todo" class="task-btn">+</button>
                     </section>
                     <section class="todo-priority flex-horizontal">
                         <section class="priority-type">
@@ -27,17 +27,17 @@
                             <label for="red-priority">important</label>
                         </section>
                         <section class="priority-type">
-                            <input type="radio" name="option" id="blue-priority">
-                            <label for="blue-priority">semi-important</label>
+                            <input type="radio" name="option" id="yellow-priority">
+                            <label for="yellow-priority">semi-important</label>
                         </section>
                         <section class="priority-type">
-                            <input type="radio" name="option" id="green-priority">
-                            <label for="green-priority">irrelevant</label>
+                            <input type="radio" name="option" id="gray-priority">
+                            <label for="gray-priority">irrelevant</label>
                         </section>
                     </section>
                 </section>
-                <div class="horizontal-separator"></div>
-                <section class="todo-storage"></section>
+                <div id="sep" class="horizontal-separator"></div>
+                <section id="storage-active-todo" class="todo-storage"></section>
             </section>
         </section>    
     </section>
